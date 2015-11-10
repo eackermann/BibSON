@@ -1,0 +1,409 @@
+Title = Latent variable modeling of hippocampal replay
+Type = poster
+AuthorList
+    First = [Etienne, Rudolph]
+    Last = Ackermann
+    ORCID = orcid.org/0000-0001-7139-9360
+    Bold = TRUE
+    First = [Caleb, T]
+    Last = Kemere
+    First = Kamran
+    Last = Diba
+Date = 20151017
+ConfName = Neuroscience 2015 (Annual meeting of the Society for Neuroscience), Chicago
+ConfDates = October 17--21, 2015
+Pages = 
+DOI = 
+URL = 
+ExternLink = docs/posters/SfN15poster.pdf
+PosterImg = images/poster-thumbs/SfN15.png
+Abstract = Neuronal firing patterns are often preserved and repeated in a time-compressed manner (so-called replay or neural reactivation), but it remains challenging to (i) identify and (ii) quantitatively assess these events from extracellularly recorded neural data. Much is still unknown about replay, and the ability to reliably detect replay events is of critical importance in order to further analyze the nature of, and functional role of replay in learning and memory. Moreover, a statistical understanding of replay events is still lacking. For example, what percentage of the bursts of neural activity during sharp wave-ripple complexes (SPW-R) in the hippocampus are considered replay events? And what do those sequences represent that are not classified as replay? Most current approaches to detect replay rely on either template matching, or on decoding-based sequence identification, followed by an ad hoc scoring step. Unfortunately these approaches lack a principled framework, making it difficult to extend these approaches to more complicated environments. Furthermore, the lack of a principled framework makes a comparison between different approaches---and the interpretation of results---difficult. Here I show how latent variable models---and hidden Markov models (HMMs) in particular---can be used to identify and quantify putative sequences of reactivation in a principled manner. Using HMMs to detect replay events shows comparable performance to existing approaches (in terms of detection accuracy), but there are a number of key advantages. First, the principled framework makes it straightforward to extend replay detection to arbitrarily complex environments, given enough training data. Second, in contrast to template matching approaches, HMMs allow us to identify replay events that did not explicitly form part of the training data, such as shortcut or exploratory sequences. Third, since the HMM is a generative statistical model, we can use it in a simulation context to answer several interesting questions, such as how many different environments might be needed to lead to the level of variability that we typically observe in neural activity during SPW-Rs. Finally, HMMs allow us to detect replay in regions of the brain where behavioral correlates might not be available---the model parameters including the sequential structure in the data are all learnt directly from the neural data itself. This novel approach to studying replay, along with several extensions such as the use of semi hidden Markov models (where state durations are modeled explicitly), is expected to lead to a deeper understanding of replay and its functional significance in learning and memory.
+
+Title = Characterizing the Variability of Hippocampal Neural Activity using Hidden Markov Models: A Principled Framework for Exploring Sequential Neural Reactivations
+Type = poster
+AuthorList
+    First = [Etienne, Rudolph]
+    Last = Ackermann
+    ORCID = orcid.org/0000-0001-7139-9360
+    Bold = TRUE
+    First = [Caleb, T]
+    Last = Kemere
+Date = 20151000
+ConfName = Gulf Coast Cluster for NeuroEngineering, 5th Annual Symposium, Rice University
+ConfDates = October 2, 2015
+Pages = 
+DOI = 
+URL = 
+ExternLink = docs/posters/rice-poster-neuroeng15.pdf
+PosterImg = images/poster-thumbs/rice-poster-neuroeng15.png
+Abstract = Here we develop and use hidden Markov models (HMMs) to characterize the variability of sequential neural activity in the rodent hippocampus on both the behavioral and the replay timescales. Such an approach is attractive because it provides a principled (and probabilistic) framework on which to study and explore sequential neural activity (including replay), which is in contrast to the heuristic approaches (such as template matching) that have been used thus far to classify events as either being replay, or not. Moreover, even though the stimuli are necessarily unobserved (latent), the use of HMMs enable us to uncover sequential activity in those events that have traditionally been classified as non-replay&mdash;or simply as noise&mdash;and we anticipate that a closer look at these "non-replay" events will deepen our understanding of SWRs, replay, and their potential role in decision making and memory consolidation.
+
+Title = Characterizing the Variability of Sequential Neural Activity in the Hippocampus
+Type = poster
+AuthorList
+    First = [Etienne, Rudolph]
+    Last = Ackermann
+    ORCID = orcid.org/0000-0001-7139-9360
+    Bold = TRUE
+    First = [Caleb, T]
+    Last = Kemere
+Date = 20150901
+ConfName = NeuroRegeneration Collaborative Symposium, Rice University
+ConfDates = September 1--2, 2015
+Pages = 
+DOI = 
+URL = 
+ExternLink = docs/posters/rice-poster-neuroregen.pdf
+PosterImg = images/poster-thumbs/rice-poster-neuroregen.png
+Abstract = Several neurodegenerative diseases and/or dementias are characterized&mdash;at least in part&mdash;by a decline in memory performance. As a consequence, it is important to understand how these diseases affect the hippocampus (HP), which plays a critical role in learning and memory. Place cells in the HP fire in a sequential order as animals move around in an environment, and these sequences have been known to “replay” during sharp-wave ripples (SWRs)&mdash;this reactivation is believed to play an important role in memory consolidation.</p>
+    <p>A number of previous studies have reported a remarkable increase in SWR activity in the HP&mdash;including in calcineurin knockout, as well as dominant negative DISC1 (DN-DISC1) models of schizophrenia (SCZ). In addition, the HP has been reported to be “hyperexcitable” in other dementia models including at least a mouse model of tauopathy, where the hyperexcitability has been hypothesized to be a result of the reduced function of parvalbumin-containing interneurons in the HP. However, the nature of the activity in the HP under these different models of dementia is still not well understood. Cheng &amp; Ji (2013) have reported a nearly-complete dissociation between place cells in the HP and external cues or stimuli in the environment in rTg4510 mice&mdash;a model of tauopathy&mdash;but remarkably, they still observed robust firing sequences as animals ran in both familiar and novel environments. In most of the other studies mentioned before, no sequential activity was found during SWRs in the diseased animals, whereas sequential activity was preserved in the healthy controls. These findings might at first seem contradictory, but it is important to note that Cheng &amp; Ji did not consider HP activity during SWRs, but only during active behavior. As a consequence, it is perhaps possible that the dissociation and transient nature of sequential activity observed by Cheng and Ji was caused by a disruption in the consolidation process, as suggested by the lack of sequential activity during SWRs reported by other authors.</p>
+    <p>It seems important to better characterize and understand the neural activity in the HP&mdash;both during SWRs and during normal behavior&mdash;to facilitate a deeper understanding of the effects of these diseases or dementias on the HP and memory. To this end, we propose to use a latent variable modeling approach to characterize the variability in HP activity. Latent variable models seem like a natural choice, because for both replay-like activity during SWRs as well as for dissociated sequential activity during normal (diseased) behavior, the driving stimuli are unobserved (or latent). In this way, we hope to gain some insight into the disrupted nature of sequential activity, as well as to answer more explicit questions like “how variable (disorganized) is the activity in the HP during dissociated place cell sequences?” or “is all sequential organization lost during SWRs under SCZ, or is there previously unseen sequential activity, driven by some (latent or unobservable) factor?”
+
+Title = 3-Dimensional Spatial Representation in the Rodent Hippocampus
+Type = poster
+AuthorList
+    First = [Etienne, Rudolph]
+    Last = Ackermann
+    ORCID = orcid.org/0000-0001-7139-9360
+    Bold = TRUE
+    First = [Caleb, T]
+    Last = Kemere
+Date = 20150827
+ConfName = Discover Research Fair, Rice University
+ConfDates = August 27, 2015
+PosterImg = images/poster-thumbs/3dspace.png
+ExternLink = docs/posters/rice-poster-3dspace-opt.pdf
+Abstract = We design and use a rodent elevator to investigate the 3-dimensional spatial representation in the hippocampus. The behavioral task is a 3-dimensional generalization of the W-maze task, where a rat has to learn to alternate between the outer arms of the maze, while always returning to the center arm (with the elevator) between arm visits. This is a very high level poster, created for a general undergraduate audience at the Discover Research Fair. It does not contain any results, and is really more of a marketing poster.
+
+Title = Using Page's Cumulative Sum Test on MODIS Time Series to Detect Land-Cover Changes
+Type = jpaper
+AuthorList
+    First = [Trienko, Lups]
+    Last = Grobler
+    First = [Etienne, Rudolph]
+    Last = Ackermann
+    ORCID = orcid.org/0000-0001-7139-9360
+    Bold = TRUE
+    First = [A, J]
+    Last = van Zyl
+    First = [Jan, Corne]
+    Last = Olivier
+    First = W
+    Last = Kleynhans
+    First = [B, P]
+    Last = Salmon
+Date = 20120726
+Pages = 332--336
+ISSN = 1545-598X
+Journal = Geoscience and Remote Sensing Letters, IEEE
+Volume = 10
+Issue = 2
+DOI = 10.1109/LGRS.2012.2205556
+URL = http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6249728
+Abstract = Human settlement expansion is one of the most pervasive forms of land-cover change in South Africa. The use of Page's cumulative sum (CUSUM) test is proposed as a method to detect new settlement developments in areas that were previously covered by natural vegetation using 500-m Moderate Resolution Imaging Spectroradiometer time-series satellite data. The method is a sequential per-pixel change alarm algorithm that can take into account positive detection delay, probability of detection, and false-alarm probability to construct a threshold. Simulated change data were generated to determine a threshold during a preliminary offline optimization phase. After optimization, the method was evaluated on examples of known land-cover change in the Gauteng and Limpopo provinces of South Africa. The experimental results indicated that CUSUM performs better than band differencing in the before-mentioned study areas.
+
+
+Title = Land-Cover Separability Analysis of MODIS Time-Series Data Using a Combined Simple Harmonic Oscillator and a Mean Reverting Stochastic Process
+Type = jpaper
+AuthorList
+    First = [Trienko, Lups]
+    Last = Grobler
+    First = [Etienne, Rudolph]
+    Last = Ackermann
+    ORCID = orcid.org/0000-0001-7139-9360
+    Bold = TRUE
+    First = [Jan, Corne]
+    Last = Olivier
+    First = [A, J]
+    Last = van Zyl
+    First = W
+    Last = Kleynhans
+Date = 20120215
+Pages = 857--866
+ISSN = 1939-1404
+Journal = Selected Topics in Applied Earth Observations and Remote Sensing, IEEE Journal of
+Volume = 5
+Issue = 3
+DOI = 10.1109/JSTARS.2012.2183118
+URL = http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6153035
+Abstract = It is proposed that the time series extracted from moderate resolution imaging spectroradiometer satellite data be modeled as a simple harmonic oscillator with additive colored noise. The colored noise is modeled with an Ornstein-Uhlenbeck process. The Fourier transform and maximum-likelihood parameter estimation are used to estimate the harmonic and noise parameters of the colored simple harmonic oscillator. Two case studies in South Africa show that reliable class differentiation can be obtained between natural vegetation and settlement land cover types, when using the parameters of the colored simple harmonic oscillator as input features to a classifier. The two case studies were conducted in the Gauteng and Limpopo provinces of South Africa. In the case of the Gauteng case study, we obtained an average for single-band classification, while standard harmonic features only achieved an average . In conclusion, the results obtained from the colored simple harmonic oscillator approach outperformed standard harmonic features and the minimum distance classifier.
+
+Title = Nonlinear dynamic systems modeling using Gaussian processes: Predicting ionospheric total electron content over South Africa
+Type = jpaper
+AuthorList
+    First = [Etienne, Rudolph]
+    Last = Ackermann
+    ORCID = orcid.org/0000-0001-7139-9360
+    Bold = TRUE
+    First = [Pieter, J]
+    Last = de Villiers
+    First = [Pierre, J]
+    Last = Cilliers
+Date = 20111011
+Pages = 1978--2012
+Journal = Journal of Geophysical Research: Space Physics
+Volume = 116
+Issue = A10
+DOI = 10.1029/2010JA016375
+URL = http://onlinelibrary.wiley.com/doi/10.1029/2010JA016375/full
+Abstract = Two different implementations of Gaussian process (GP) models are proposed to estimate the vertical total electron content (TEC) from dual frequency Global Positioning System (GPS) measurements. The model falseness of GP and neural network models are compared using daily GPS TEC data from Sutherland, South Africa, and it is shown that the proposed GP models exhibit superior model falseness. The GP approach has several advantages over previously developed neural network approaches, which include seamless incorporation of prior knowledge, a theoretically principled method for determining the much smaller number of free model parameters, the provision of estimates of the model uncertainty, and a more intuitive interpretability of the model.
+
+Title = (Master of Engineering) Sequential Land Cover Classification
+Type = thesis
+AuthorList
+    First = [Etienne, Rudolph]
+    Last = Ackermann
+    ORCID = orcid.org/0000-0001-7139-9360
+Date = 20110000
+Generic = University of Pretoria, Department of Electrical, Electronic and Computer Engineering
+URL = http://repository.up.ac.za/handle/2263/27051
+Abstract = Land cover classification using remotely sensed data is a critical first step in large-scale environmental monitoring, resource management and regional planning. The classification task is made difficult by severe atmospheric scattering and absorption, seasonal variation, spatial dependence, complex surface dynamics and geometries, and large intra-class variability. Most of the recent research effort in land cover classification has gone into the development of increasingly robust and accurate (and also increasingly complex) classifiers by constructing–often in an ad hoc manner–multispectral, multitemporal, multisource classifiers using modern machine learning techniques such as artificial neural networks, fuzzy-sets, and expert systems. However, the focus has always been (almost exclusively) on increasing the classification accuracy of newly developed classifiers. We would of course like to perform land cover classification (i) as accurately as possible, but also (ii) as quickly as possible. Unfortunately there exists a tradeoff between these two requirements, since the faster we must make a decision, the lower we expect our classification accuracy to be, and conversely, a higher classification accuracy typically requires that we observe more samples (i.e., we must wait longer for a decision). Sequential analysis provides an attractive (indeed an optimal) solution to handling this tradeoff between the classification accuracy and the detection delay–and it is the aim of this study to apply sequential analysis to the land cover classification task. Furthermore, this study deals exclusively with the binary classification of coarse resolution MODIS time series data in the Gauteng region in South Africa, and more specifically, the task of discriminating between residential areas and vegetation is considered.
+
+Title = Minimum error land cover separability analysis and classification of MODIS time series data
+Type = cpaper
+AuthorList
+    First = [Etienne, Rudolph]
+    Last = Ackermann
+    ORCID = orcid.org/0000-0001-7139-9360
+    Bold = TRUE
+    First = [Trienko, Lups]
+    Last = Grobler   
+    First = [A, J]
+    Last = van Zyl
+    First = [Karen, C]
+    Last = Steenkamp
+    First = [Jan, Corne]
+    Last = Olivier
+Date = 20110724
+URL = http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6049847&tag=1
+ExternLink = docs/papers/06049847.pdf
+Pages = 2999--3002
+ConfName = International Geoscience and Remote Sensing Symposium (IGARSS), IEEE, Vancouver, BC
+ConfDates = July 24--29, 2011
+Abstract = Three minimum-error land cover classifiers are compared on coarse resolution MODerate-resolution Imaging Spectroradiometer (MODIS) surface reflectance data for discerning between vegetation and settlement classes. It is shown that good class separability can be achieved using only the seasonal component of Normalized Difference Vegetation Index (NDVI) data, or the mean component of several other MODIS land bands. It is also shown why particular classifiers fail in certain spectral bands. Finally it is shown that after NDVI, band 2 has the highest separability of all the MODIS land bands, and band 5 has the lowest separability.
+DOI = 10.1109/IGARSS.2011.6049847
+
+Title = Cavalieri integration
+Type = jpaper
+AuthorList
+    First = [Etienne, Rudolph]
+    Last = Ackermann
+    ORCID = orcid.org/0000-0001-7139-9360
+    Bold = TRUE
+    First = [Trienko, Lups]
+    Last = Grobler
+    First = Waldo
+    Last = Kleynhans
+    First = [Jan, Corne]
+    Last = Olivier
+    First = [Brian, P]
+    Last = Salmon
+    First = [A, J]
+    Last = van Zyl
+Date = 20120924
+Pages = 265--296
+Journal = Quaestiones Mathematicae
+Volume = 35
+Issue = 3
+DOI = 10.2989/16073606.2012.724937
+URL = http://dx.doi.org/10.2989/16073606.2012.724937
+Abstract = We use Cavalieri's principle to develop a novel integration technique which we call Cavalieri integration. Cavalieri integrals differ from Riemann integrals in that non-rectangular integration strips are used. In this way we can use single Cavalieri integrals to find the areas of some interesting regions for which it is difficult to construct single Riemann integrals.</p><p>We also present two methods of evaluating a Cavalieri integral by first transforming it to either an equivalent Riemann or Riemann-Stieltjes integral by using special transformation functions h(x) and its inverse g(x), respectively. Interestingly enough it is often very difficult to find the transformation function h(x), whereas it is very simple to obtain its inverse g(x).
+
+Title = An inductive approach to simulating multispectral MODIS surface reflectance time series
+Type = jpaper
+AuthorList
+    First = [Trienko, Lups]
+    Last = Grobler
+    First = [Etienne, Rudolph]
+    Last = Ackermann
+    ORCID = orcid.org/0000-0001-7139-9360
+    Bold = TRUE
+    First = [A, J]
+    Last = van Zyl
+    First = [Jan, Corne]
+    Last = Olivier
+    First = Waldo
+    Last = Kleynhans
+    First = [Brian, P]
+    Last = Salmon
+Date = 20120824
+Pages = 446--450
+Journal = Geoscience and Remote Sensing Letters, IEEE
+Volume = 10
+Issue = 3
+DOI = 10.1109/LGRS.2012.2208446
+URL = http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6286988
+Abstract = In this letter, a first-order Moderate Resolution Imaging Spectroradiometer time-series simulator, which uses a colored simple harmonic oscillator, is proposed. The simulated data can be used to augment data sets so that data intensive classification and change detection algorithms can be applied without enlarging the available ground truth data sets. The simulator's validity is tested by simulating data sets of natural vegetation and human settlement areas and comparing it with the ground truth data in Gauteng province located in South Africa. The difference found between the real and simulated data sets, which is reported in the experiments, is negligent. The simulated and real-world data sets are compared by using a wide selection of class and pixel metrics. In particular, the average temporal Hellinger distance between the real and simulated data sets is 0.2364 and 0.2269 for the vegetation and settlement classes, respectively, whereas the average parameter Hellinger distance is 0.1835 and 0.2554, respectively.
+
+Title = Sequential classification of MODIS time series
+Type = cpaper
+AuthorList
+    First = [Trienko, Lups]
+    Last = Grobler   
+    First = [Etienne, Rudolph]
+    Last = Ackermann
+    ORCID = orcid.org/0000-0001-7139-9360
+    Bold = TRUE
+    First = [A, J]
+    Last = van Zyl
+    First = Waldo
+    Last = Kleynhans
+    First = [B, P]
+    Last = Salmon
+    First = [Jan, Corne]
+    Last = Olivier
+Date = 20120722
+URL = http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6352683
+Pages = 6236--6239
+ConfName = International Geoscience and Remote Sensing Symposium (IGARSS), IEEE, Munich
+ConfDates = July 24--29, 2011
+Abstract = In this paper a sequential time-varying maximum likelihood classifier is applied on coarse resolution MODIS surface reflectance data. It is shown that good class separability can be obtained after considering only one year of data. Finally it is shown that after NDVI, band 2 has the highest separability of all the MODIS land bands, and band 6 has the lowest separability for the presented case study.
+DOI = 10.1109/IGARSS.2012.6352683
+
+Title = (Master of Arts) Functional inference of conductances in the LGMD neuron
+Type = thesis
+AuthorList
+    First = [Etienne, Rudolph]
+    Last = Ackermann
+    ORCID = orcid.org/0000-0001-7139-9360
+Date = 20130000
+Generic = Rice University, Department of Computational and Applied Mathematics
+URL = https://scholarship.rice.edu/handle/1911/75121
+Abstract = This thesis develops an approach to determine spatially-varying ionic channel conductances throughout the dendrites of the LGMD neuron from distal transmembrane potential recordings in response to distributed subthreshold current injections. In particular this approach is demonstrated on a straight cable approximation to the LGMD neuron with leak and hyperpolarization-activated h-currents.</p><p>Knowledge of the underlying channel conductances can help neuroscientists to characterize, better understand, and predict neuronal behavior&mdash;and topographic integration in the LGMD neuron in particular&mdash;but it is extremely difficult to measure these conductances directly.</p><p>As a consequence, these conductances are commonly estimated by searching for several parameters that lead to simulated responses that are consistent with recorded behavior. In contrast, the approach presented here uses the method of moments to directly recover the underlying conductances, eliminating the need to simulate responses, making this approach both faster and more robust than typical optimization approaches since the solution cannot get trapped in local minima.
+
+
+
+<!--*************************************************
+********************* conference ********************
+**************************************************-->
+<div class="item mix cpaper" data-year="2011">
+  <div class="pubmain">
+    <div class="pubassets">
+
+      <a href="#" class="pubcollapse">
+        <i class="icon-expand-alt"></i>
+      </a>
+      <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6072001" class="tooltips" title="External link" target="_blank">
+        <i class="icon-external-link"></i>
+      </a>
+      <a href="#" class="tooltips" title="Download" target="_blank">
+        <i class="icon-cloud-download"></i>
+      </a>
+
+    </div>
+
+    <h4 class="pubtitle">Belief propagation for nonlinear block codes</h4>
+    <div class="pubauthor"><strong>Ackermann ER</strong>, Grobler TL, van Zyl AJ, Olivier JC</div>
+    <div class="pubcite"><span class="label label-conference">conference paper</span><span class="label label-year">2011</span>AFRICON, IEEE, 1&ndash;6</div>
+
+  </div>
+  <div class="pubdetails">
+    <h4>Abstract</h4>
+    <p>Special cases of the belief propagation algorithm are commonly used to decode various linear error correcting codes. We show that the belief propagation algorithm can also be applied to the decoding problem for nonlinear error correcting codes by considering a modified set of update rules. We demonstrate the modified belief propagation algorithm by applying it to the well-known Nordstrom-Robinson (15, 256, 5) nonlinear code. The Nordstrom-Robinson code contains many cycles, which means that belief propagation is suboptimal. Nevertheless, we observe a coding gain of about 1.2 dB with this method.</p>
+  </div>
+</div>
+
+<!--*************************************************
+********************* conference ********************
+**************************************************-->
+<div class="item mix cpaper" data-year="2011">
+  <div class="pubmain">
+    <div class="pubassets">
+
+      <a href="#" class="pubcollapse">
+        <i class="icon-expand-alt"></i>
+      </a>
+      <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6072001" class="tooltips" title="External link" target="_blank">
+        <i class="icon-external-link"></i>
+      </a>
+      <a href="#" class="tooltips" title="Download" target="_blank">
+        <i class="icon-cloud-download"></i>
+      </a>
+
+    </div>
+
+    <h4 class="pubtitle">Systematic Luby Transform codes as incremental redundancy scheme</h4>
+    <div class="pubauthor"><strong>Ackermann ER</strong>, Grobler TL, van Zyl AJ, Olivier JC</div>
+    <div class="pubcite"><span class="label label-conference">conference paper</span><span class="label label-year">2011</span>AFRICON, IEEE, 1&ndash;5</div>
+
+  </div>
+  <div class="pubdetails">
+    <h4>Abstract</h4>
+    <p>Systematic Luby Transform (fountain) codes are investigated as a possible incremental redundancy scheme for EDGE. The convolutional incremental redundancy scheme currently used by EDGE is replaced by the fountain approach. The results of the simulations performed for each incremental redundancy scheme show that the fountain approach outperforms the convolutional approach on the second retransmission when implemented on the EDGE platform. The results also indicate that if the packet sizes used by a specific platform is large enough the fountain approach will always outperform the convolutional approach.</p>
+  </div>
+</div>
+
+
+<!--*************************************************
+********************* conference ********************
+**************************************************-->
+<div class="item mix cpaper" data-year="2009">
+  <div class="pubmain">
+    <div class="pubassets">
+
+      <a href="#" class="pubcollapse">
+        <i class="icon-expand-alt"></i>
+      </a>
+      <a href="http://www.researchgate.net/profile/Johan_De_Villiers3/publication/228637508_Characterisation_of_the_Ionospheric_Electron_Density_using_Advanced_Bayesian_Estimation_Techniques/links/546ee8fd0cf2bc99c215627c.pdf" class="tooltips" title="External link" target="_blank">
+        <i class="icon-external-link"></i>
+      </a>
+      <a href="#" class="tooltips" title="Download" target="_blank">
+        <i class="icon-cloud-download"></i>
+      </a>
+    </div>
+
+    <h4 class="pubtitle">Characterisation of the Ionospheric Electron Density using Advanced Bayesian Estimation Techniques
+</h4>
+    <div class="pubauthor"><strong>Ackermann ER</strong>, de Villiers PJ, Cilliers PJ</div>
+    <div class="pubcite"><span class="label label-conference">conference paper</span><span class="label label-year">2009</span>Southern Africa Telecommunication Networks and Applications Conference (SATNAC)</div>
+
+  </div>
+  <div class="pubdetails">
+    <h4>Abstract</h4>
+    <p>The accurate determination of the electron density
+profile for sections of the ionosphere is of critical importance in a
+number of scientific and engineering applications, including high
+frequency (HF) direction finding and navigation. The ionospheric
+total electron content (TEC) can be derived from dual frequency
+global positioning satellite (GPS) signals, which may then be used
+to estimate the electron density profiles through tomographic
+inversion. This inverse formulation is ill-posed; and leads to
+an extremely ill-conditioned operator matrix after discretization.
+This operator matrix is also expected to be highly rank
+deficient. We will attempt to uniquely reconstruct the electron
+density distribution by applying nonlinear numerical Bayesian
+estimation methods such as Gaussian Processes (GP) to the highly
+multimodal problem.</p>
+  </div>
+</div>
+
+
+<!--*************************************************
+*********************** poster **********************
+**************************************************-->
+<div class="item mix poster" data-year="201504">
+  <div class="pubmain">
+    <div class="pubassets">
+
+      <a href="#" class="pubcollapse">
+        <i class="icon-expand-alt"></i>
+      </a>
+      <a href="docs/posters/utaustin2015.pdf" class="tooltips" title="Download" target="_blank">
+        <i class="icon-cloud-download"></i>
+      </a>
+    </div>
+
+    <h4 class="pubtitle">Latent variable modeling of sequential hippocampal reactivation</h4>
+    <div class="pubauthor"><strong>Ackermann ER</strong>, Kemere CT</div>
+    <div class="pubcite"><span class="label label-poster">poster</span><span class="label label-year">2015</span>UT Austin Conference on Learning and Memory, April 24&ndash;25, 2015</div>
+
+  </div>
+  <div class="pubdetails">
+  <a href="docs/posters/utaustin2015.pdf" target="_blank"><img alt="image" src="images/poster-thumbs/utaustin2015.png" align="left"  style="padding:0 15px 15px 0;"></a>
+    <h4>Abstract</h4>
+    <p>Neuronal firing patterns are often preserved and repeated in a time-compressed manner (called replay or neural reactivation), but it remains challenging to (i) identify and (ii) quantitatively assess these events from extracellularly recorded neural data. Here I show how latent variable models (hidden Markov models in particular) can be used to identify and quantify putative sequences of reactivation&mdash;commonly believed to be critical for understanding learning, and memory consolidation in the hippocampus.</p>
+  </div>
+</div>
+
+
+

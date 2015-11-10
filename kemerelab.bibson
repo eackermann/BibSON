@@ -1,0 +1,51 @@
+Title = Investigating irregularly patterned deep brain stimulation signal design using biophysical models
+Type = jpaper
+AuthorList
+    First = [Samantha, R]
+    Last = Summerson
+    First = Benhaam
+    Last = Aazhang
+    First = Caleb
+    Last = Kemere
+Date = 20150626
+Journal = Frontiers in Computational Neuroscience
+Volume = 9
+Number = 78
+DOI = 10.3389/fncom.2015.00078
+URL = http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4481153/
+Abstract = Parkinson's disease (PD) is a neurodegenerative disorder which follows from cell loss of dopaminergic neurons in the substantia nigra pars compacta (SNc), a nucleus in the basal ganglia (BG). Deep brain stimulation (DBS) is an electrical therapy that modulates the pathological activity to treat the motor symptoms of PD. Although this therapy is currently used in clinical practice, the sufficient conditions for therapeutic efficacy are unknown. In this work we develop a model of critical motor circuit structures in the brain using biophysical cell models as the base components and then evaluate performance of different DBS signals in this model to perform comparative studies of their efficacy. Biological models are an important tool for gaining insights into neural function and, in this case, serve as effective tools for investigating innovative new DBS paradigms. Experiments were performed using the hemi-parkinsonian rodent model to test the same set of signals, verifying the obedience of the model to physiological trends. We show that antidromic spiking from DBS of the subthalamic nucleus (STN) has a significant impact on cortical neural activity, which is frequency dependent and additionally modulated by the regularity of the stimulus pulse train used. Irregular spacing between stimulus pulses, where the amount of variability added is bounded, is shown to increase diversification of response of basal ganglia neurons and reduce entropic noise in cortical neurons, which may be fundamentally important to restoration of information flow in the motor circuit.
+
+Title = Characterizing Motor and Cognitive Effects Associated with Deep Brain Stimulation in the GPi of Hemi-Parkinsonian Rats
+Type = jpaper
+AuthorList
+    First = [Samantha, R]
+    Last = Summerson
+    First = Benhaam
+    Last = Aazhang
+    First = Caleb
+    Last = Kemere
+Date = 20140612
+Journal = IEEE Transactions on Neural Systems and Rehabilitation Egnineering
+Pages = 1218--1227
+Volume = 22
+Issue = 6
+DOI = 10.1109/TNSRE.2014.2330515
+URL = http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6832606
+Abstract = The globus pallidus internus (GPi) is the main output nucleus of the basal ganglia, which is associated with a variety of functions including motor performance and cognition. The GPi is one of the primary targets of deep brain stimulation (DBS) in patients with movement disorders. However, the therapeutic mechanism of GPi-DBS is poorly understood and rodent models have not been characterized. Cognitive side effects, such as impulsivity and depression, of DBS treatment for Parkinson's disease are known, but their relationship to the efficacy of the treatment is not well explained. The goal of this study is to illuminate the effects of GPi-DBS on both motor and cognitive function in a hemi-Parkinsonian rat model. In this work, we study the motor performance of the rodents in multiple behaviors, as well as of impulsivity and depression, and consider the relationship between these behavioral variables and the stimulation frequency of the DBS signal. For the first time, the connection is directly established between stimulating the GPi, motor performance and cognition is directly established in the hemi-Parkinsonian rodent model.
+
+Title = Current Amplitude-Dependent Modulation of Rotational Behavior with GPi Stimulation in the Rodent Model of Parkinson’s Disease
+Type = cpaper
+AuthorList
+    First = [Samantha, R]
+    Last = Summerson
+    First = [Caleb, T]
+    Last = Kemere
+    First = Benhaam
+    Last = Aazhang
+Date = 20130703
+ConfName = Engineering in Medicine and Biology Society (EMBC), 2013 35th Annual International Conference of the IEEE, Osaka, Japan
+ConfDates = July 3--7, 2013
+Pages = 783--786
+DOI = 10.1109/EMBC.2013.6609617
+URL = http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6609617
+Abstract = The globus pallidus interna (GPi) is the main output nucleus of the basal ganglia, the neural circuit involved in motor and cognitive performance which is impacted by Parkinson's Disease (PD). Although deep brain stimulation (DBS) of the GPi is an effective treatment for the motor symptoms of PD in humans, the link between the stimulation signal space and the therapeutic benefits of DBS is not well understood. The rodent model of PD is useful for characterization of ameliorative DBS, though prior work focuses on the rodent model for DBS of the subthalamic nucleus (STN). This work investigates GPi-DBS in the rat model of PD under the framework of an amphetamine-induced rotational behavior. This work elucidates the relationship between stimulation current intensity and the motor effects of the dopaminergic lesion. Our results show that rotational behavior is modulated by the current intensity and validates GPi-DBS as a beneficial treatment of PD.

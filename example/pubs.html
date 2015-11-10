@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="http://rnel.rice.edu/images/favicon.ico">
+
+  <title>RNEL Publications</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./pubs-target_files/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Navigation Bar -->
+  <link href="./pubs-target_files/navbar.css" rel="stylesheet">
+  <link href="./pubs-target_files/callouts.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/custom.css">
+
+  <script src="scripts/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="scripts/pubscripts/TweenMax.min.js"></script>
+  <script type="text/javascript" src="scripts/pubscripts/modernizr.custom.63321.js"></script>
+  <script type="text/javascript" src="scripts/pubscripts/jquery.dropdownit.js"></script>
+  <script type="text/javascript" src="scripts/pubscripts/bootstrap.min.js"></script>
+  <script type="text/javascript" src="scripts/pubscripts/jquery.mixitup.min.js"></script>
+  <script type="text/javascript" src="scripts/pubscripts/perfect-scrollbar-0.4.5.with-mousewheel.min.js"></script>
+  <script type="text/javascript" src="scripts/pubscripts/custom.js"></script>
+  <style id="holderjs-style" type="text/css"></style>
+</head>
+<body class=" hasGoogleVoiceExt">
+
+  <!-- Static navbar -->
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://rnel.rice.edu/"><img src="./pubs-target_files/Banner3.png" height="50px" alt="Rice RNEL"></a>
+        <!-- <a class="navbar-brand" href="/">Rice RNEL</a> -->
+      </div>
+      <div class="navbar-collapse collapse" id="main-navbar-collapse">
+        <ul class="nav navbar-nav">
+
+          <li><a href="http://rnel.rice.edu/">Home</a></li>
+
+          <li class="dropdown">
+            <a href="http://rnel.rice.edu/pubs/#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://rnel.rice.edu/#research">Overview</a></li>
+              <li class="divider"></li>
+              <li><a href="http://rnel.rice.edu/research/memory.html">Memory</a></li>
+              <li><a href="http://rnel.rice.edu/research/dbs.html">DBS</a></li>
+              <li><a href="http://rnel.rice.edu/research/tools.html">Tools</a></li>
+            </ul>
+          </li>
+          <li><a href="http://rnel.rice.edu/people">People</a></li>
+          <li class="active"><a href="http://rnel.rice.edu/pubs/#">Publications</a></li>
+
+          <li><a href="http://rnel.rice.edu/news">News</a></li>
+          <li><a href="http://rnel.rice.edu/links">Links</a></li>
+          <li><a href="https://github.com/kemerelab/Private/wiki">Internal</a></li>
+
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </div>
+
+  <div class="outer-container">
+    <main>
+      <section class="section">
+
+        <div class="container publications">
+          <h2 id="publications-and-conference-presentations">Publications and Conference Presentations</h2>
+
+          <div class="section color-1" id="filters">
+            <div class="section-container">
+              <div class="row">
+
+                <div class="three columns choosetoview">
+                  <span>Choose to view:</span>
+                </div>
+                <div class="six columns">
+          <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
+            <option class="filter" value="all" selected>All types</option>
+            <option class="filter" value="jpaper">Journal Papers</option>
+            <option class="filter" value="cpaper">Conference Papers</option>
+            <option class="filter" value="preprint">Preprints</option>
+            <option class="filter" value="poster">Posters</option>
+            <option class="filter" value="thesis">Theses</option>
+            <option class="filter" value="moretypes">Can add more types here</option>
+            
+            <!--- <option class="filter" value="tpaper">Technical Papers</option> -->
+          </select>
+        </div>
+
+                <div class="three columns" id="sort">
+                  <span>Sort by year:</span>
+                  <div class="btn-group pull-right"> 
+                    <button type="button" data-sort="data-year" data-order="desc" class="sort btn btn-default">a<i class="icon-sort-by-order"></i></button>
+                    <button type="button" data-sort="data-year" data-order="asc" class="sort btn btn-default">d<i class="icon-sort-by-order-alt"></i></button>
+                  </div>
+                </div>    
+              </div>
+            </div>
+          </div> <!-- filters -->
+
+          <div class="section color-2" id="pub-grid">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="pitems"><div class="item mix jpaper" data-year="20150626"><div class="pubmain"><div class="pubassets"> <a href="#" class="tooltips" title="Download" target="_blank"></a><i class="icon-cloud-download"></i><a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4481153/" class="tooltips" title="Link" target="_blank"></a></div><h4 class="pubtitle">Investigating irregularly patterned deep brain stimulation signal design using biophysical models</h4><div class="pubauthor">S. R. Summerson, B. Aazhang and C. Kemere</div><div class="pubcite"><span class="label label-journal">journal paper</span><span class="label label-year">2015</span><i>Frontiers in Computational Neuroscience</i>, vol. 9, no. 78, June 2015.</div></div><div class="pubdetails"><h4>Abstract</h4><p>Parkinson's disease (PD) is a neurodegenerative disorder which follows from cell loss of dopaminergic neurons in the substantia nigra pars compacta (SNc), a nucleus in the basal ganglia (BG). Deep brain stimulation (DBS) is an electrical therapy that modulates the pathological activity to treat the motor symptoms of PD. Although this therapy is currently used in clinical practice, the sufficient conditions for therapeutic efficacy are unknown. In this work we develop a model of critical motor circuit structures in the brain using biophysical cell models as the base components and then evaluate performance of different DBS signals in this model to perform comparative studies of their efficacy. Biological models are an important tool for gaining insights into neural function and, in this case, serve as effective tools for investigating innovative new DBS paradigms. Experiments were performed using the hemi-parkinsonian rodent model to test the same set of signals, verifying the obedience of the model to physiological trends. We show that antidromic spiking from DBS of the subthalamic nucleus (STN) has a significant impact on cortical neural activity, which is frequency dependent and additionally modulated by the regularity of the stimulus pulse train used. Irregular spacing between stimulus pulses, where the amount of variability added is bounded, is shown to increase diversification of response of basal ganglia neurons and reduce entropic noise in cortical neurons, which may be fundamentally important to restoration of information flow in the motor circuit.</p></div></div><div class="item mix jpaper" data-year="20140612"><div class="pubmain"><div class="pubassets"> <a href="#" class="tooltips" title="Download" target="_blank"></a><i class="icon-cloud-download"></i><a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6832606" class="tooltips" title="Link" target="_blank"></a></div><h4 class="pubtitle">Characterizing Motor and Cognitive Effects Associated with Deep Brain Stimulation in the GPi of Hemi-Parkinsonian Rats</h4><div class="pubauthor">S. R. Summerson, B. Aazhang and C. Kemere</div><div class="pubcite"><span class="label label-journal">journal paper</span><span class="label label-year">2014</span><i>IEEE Transactions on Neural Systems and Rehabilitation Egnineering</i>, vol. 22, issue 6, pp. 1218&ndash;1227, June 2014.</div></div><div class="pubdetails"><h4>Abstract</h4><p>The globus pallidus internus (GPi) is the main output nucleus of the basal ganglia, which is associated with a variety of functions including motor performance and cognition. The GPi is one of the primary targets of deep brain stimulation (DBS) in patients with movement disorders. However, the therapeutic mechanism of GPi-DBS is poorly understood and rodent models have not been characterized. Cognitive side effects, such as impulsivity and depression, of DBS treatment for Parkinson's disease are known, but their relationship to the efficacy of the treatment is not well explained. The goal of this study is to illuminate the effects of GPi-DBS on both motor and cognitive function in a hemi-Parkinsonian rat model. In this work, we study the motor performance of the rodents in multiple behaviors, as well as of impulsivity and depression, and consider the relationship between these behavioral variables and the stimulation frequency of the DBS signal. For the first time, the connection is directly established between stimulating the GPi, motor performance and cognition is directly established in the hemi-Parkinsonian rodent model.</p></div></div><div class="item mix cpaper" data-year="20130703"><div class="pubmain"><div class="pubassets"> <a href="#" class="tooltips" title="Download" target="_blank"></a><i class="icon-cloud-download"></i><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6609617" class="tooltips" title="Link" target="_blank"></a></div><h4 class="pubtitle">Current Amplitude-Dependent Modulation of Rotational Behavior with GPi Stimulation in the Rodent Model of Parkinson’s Disease</h4><div class="pubauthor">S. R. Summerson, C. T. Kemere and B. Aazhang</div><div class="pubcite"><span class="label label-conference">conference paper</span><span class="label label-year">2013</span><i>Engineering in Medicine and Biology Society (EMBC), 2013 35th Annual International Conference of the IEEE, Osaka, Japan</i>, pp. 783&ndash;786, July 3--7, 2013</div></div><div class="pubdetails"><h4>Abstract</h4><p>The globus pallidus interna (GPi) is the main output nucleus of the basal ganglia, the neural circuit involved in motor and cognitive performance which is impacted by Parkinson's Disease (PD). Although deep brain stimulation (DBS) of the GPi is an effective treatment for the motor symptoms of PD in humans, the link between the stimulation signal space and the therapeutic benefits of DBS is not well understood. The rodent model of PD is useful for characterization of ameliorative DBS, though prior work focuses on the rodent model for DBS of the subthalamic nucleus (STN). This work investigates GPi-DBS in the rat model of PD under the framework of an amphetamine-induced rotational behavior. This work elucidates the relationship between stimulation current intensity and the motor effects of the dopaminergic lesion. Our results show that rotational behavior is modulated by the current intensity and validates GPi-DBS as a beneficial treatment of PD.</p></div></div>
+
+        </div> <!--row-->
+      </section>
+    </main>
+  </div> <!--outer-container-->
+        <div id="footer">
+        <div class="container text-center">
+          <h5><a href="http://rnel.rice.edu/">Kemere Lab</a> • Rice University • 6500 Main St • BRC 740 •
+            Houston • TX • 77005</h5>
+            <h6 style="font-size:75%">Last updated: 6 November 2015 • 
+              <a href="http://www.rice.edu/"> Rice Home</a> •
+              <a href="http://events.rice.edu/">University Calendar</a> •
+              <a href="http://www.rice.edu/search/query.php?tab=sitemap">Rice A-Z</a> •
+              <a href="http://www.rice.edu/maps/maps.html">Maps</a> •
+              <a href="http://futureowls.rice.edu/futureowls/Driving_Directions.asp">Directions</a> •
+              Built with <a href="http://jekyllrb.com/">Jekyll</a> •
+              Tested on <a href="http://kemerelab.github.io/">Github</a> •
+              <span class="glyphicon glyphicon-copyright"></span>Copyright 2014 Caleb Kemere
+            </h6>
+          </div>
+        </div>
+</body>
+<script src="./pubs-target_files/bootstrap.min.js"></script>
+<script src="./pubs-target_files/docs.min.js"></script>
+<script src="scripts/classie.js"></script>
+</html>

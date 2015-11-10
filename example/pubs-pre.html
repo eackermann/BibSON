@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="http://rnel.rice.edu/images/favicon.ico">
+
+  <title>RNEL Publications</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./pubs-target_files/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Navigation Bar -->
+  <link href="./pubs-target_files/navbar.css" rel="stylesheet">
+  <link href="./pubs-target_files/callouts.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/custom.css">
+
+  <script src="scripts/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="scripts/pubscripts/TweenMax.min.js"></script>
+  <script type="text/javascript" src="scripts/pubscripts/modernizr.custom.63321.js"></script>
+  <script type="text/javascript" src="scripts/pubscripts/jquery.dropdownit.js"></script>
+  <script type="text/javascript" src="scripts/pubscripts/bootstrap.min.js"></script>
+  <script type="text/javascript" src="scripts/pubscripts/jquery.mixitup.min.js"></script>
+  <script type="text/javascript" src="scripts/pubscripts/perfect-scrollbar-0.4.5.with-mousewheel.min.js"></script>
+  <script type="text/javascript" src="scripts/pubscripts/custom.js"></script>
+  <style id="holderjs-style" type="text/css"></style>
+</head>
+<body class=" hasGoogleVoiceExt">
+
+  <!-- Static navbar -->
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://rnel.rice.edu/"><img src="./pubs-target_files/Banner3.png" height="50px" alt="Rice RNEL"></a>
+        <!-- <a class="navbar-brand" href="/">Rice RNEL</a> -->
+      </div>
+      <div class="navbar-collapse collapse" id="main-navbar-collapse">
+        <ul class="nav navbar-nav">
+
+          <li><a href="http://rnel.rice.edu/">Home</a></li>
+
+          <li class="dropdown">
+            <a href="http://rnel.rice.edu/pubs/#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://rnel.rice.edu/#research">Overview</a></li>
+              <li class="divider"></li>
+              <li><a href="http://rnel.rice.edu/research/memory.html">Memory</a></li>
+              <li><a href="http://rnel.rice.edu/research/dbs.html">DBS</a></li>
+              <li><a href="http://rnel.rice.edu/research/tools.html">Tools</a></li>
+            </ul>
+          </li>
+          <li><a href="http://rnel.rice.edu/people">People</a></li>
+          <li class="active"><a href="http://rnel.rice.edu/pubs/#">Publications</a></li>
+
+          <li><a href="http://rnel.rice.edu/news">News</a></li>
+          <li><a href="http://rnel.rice.edu/links">Links</a></li>
+          <li><a href="https://github.com/kemerelab/Private/wiki">Internal</a></li>
+
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </div>
+
+  <div class="outer-container">
+    <main>
+      <section class="section">
+
+        <div class="container publications">
+          <h2 id="publications-and-conference-presentations">Publications and Conference Presentations</h2>
+
+          <div class="section color-1" id="filters">
+            <div class="section-container">
+              <div class="row">
+
+                <div class="three columns choosetoview">
+                  <span>Choose to view:</span>
+                </div>
+                <div class="six columns">
+          <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
+            <option class="filter" value="all" selected>All types</option>
+            <option class="filter" value="jpaper">Journal Papers</option>
+            <option class="filter" value="cpaper">Conference Papers</option>
+            <option class="filter" value="preprint">Preprints</option>
+            <option class="filter" value="poster">Posters</option>
+            <option class="filter" value="thesis">Theses</option>
+            <option class="filter" value="moretypes">Can add more types here</option>
+            
+            <!--- <option class="filter" value="tpaper">Technical Papers</option> -->
+          </select>
+        </div>
+
+                <div class="three columns" id="sort">
+                  <span>Sort by year:</span>
+                  <div class="btn-group pull-right"> 
+                    <button type="button" data-sort="data-year" data-order="desc" class="sort btn btn-default">a<i class="icon-sort-by-order"></i></button>
+                    <button type="button" data-sort="data-year" data-order="asc" class="sort btn btn-default">d<i class="icon-sort-by-order-alt"></i></button>
+                  </div>
+                </div>    
+              </div>
+            </div>
+          </div> <!-- filters -->
+
+          <div class="section color-2" id="pub-grid">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="pitems">

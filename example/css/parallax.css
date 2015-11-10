@@ -1,0 +1,116 @@
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+.container {
+  margin: 0 auto;
+}
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.landing {
+  /*height: 100vh;*/
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section.test{
+height: 30vh;
+background-image:url('../images/cheetah-cubs-south-africa-safari.jpg');
+background-position: center center;
+background-attachment:fixed;
+background-repeat: no-repeat;
+background-size: cover;
+-webkit-transition: background-image 0.4s;
+-moz-transition: background-image 0.4s;
+-ms-transition: background-image 0.4s;
+-o-transition: background-image 0.4s;
+transition: background-image 0.4s;
+overflow: hidden;
+-webkit-font-smoothing: subpixel-antialiased;
+}
+
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 100vh;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 100vh; /* centers SINGLE LINE ONLY!!! */
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+section.module.parallax-1 {
+  background-image: url("../images/cheetah-cubs-south-africa-safari.jpg");
+  /*width: 80vw;*/
+}
+section.module.parallax-2 {
+  background-image: url("../images/south-africa-safari-holiday-tswalu-meercats.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("../images/p1040166_2291b.jpg");
+}
+
+section.module.parallax-4 {
+  background-image: url("../images/P1000832.JPG");
+}
+
+section.module.parallax-5 {
+  background-image: url("../images/P1000763.JPG");
+}
+
+section.module.parallax-6 {
+  background-image: url("../images/P1000740.JPG");
+}
+
+section.module.parallax-7 {
+  background-image: url("../images/P1000742.JPG");
+}
+
+section.module.parallax-8 {
+  background-image: url("../images/19625_10102397756384156_8219018543040529957_n.jpg");
+}
+
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 60px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 100px;
+  }
+}

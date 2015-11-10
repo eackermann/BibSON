@@ -1,0 +1,40 @@
+Title = Latent variable modeling of hippocampal replay
+#Type = [poster, cpaper, jpaper, talk, chapter, review, thesis, preprint, other]
+Type = cpaper
+AuthorList
+    First = Etienne 
+    Last = Ackermann
+    ORCID = orcid.org/0000-0001-7139-9360
+    Bold = TRUE
+    First = [First, Middle]
+    Last = Last
+# Date = YYYYMMDD; use YYYY0000 for just the year;
+Date = YYYYMMDD
+ConfDates = October 17--21, 2015
+Pages = 
+DOI = 
+URL = 
+ExternLink = docs/posters/utaustin2015.pdf
+PosterImg = images/poster-thumbs/SfN15.png
+Abstract = 
+
+
+Title = 
+Type = poster
+AuthorList
+    First = [Etienne, Rudolph]
+    Last = Ackermann
+    ORCID = orcid.org/0000-0001-7139-9360
+    Bold = TRUE
+    First = [Caleb, T]
+    Last = Kemere
+Date = 
+ConfName = 
+ConfDates = October 17--21, 2015
+Pages = 
+DOI = 
+URL = 
+ExternLink = docs/posters/SfN15poster.pdf
+PosterImg = images/poster-thumbs/SfN15.png
+Abstract =
+

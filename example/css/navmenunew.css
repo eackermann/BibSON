@@ -1,0 +1,192 @@
+/* Animated border navigation (http://callmenick.com/post/slide-and-push-menus-with-css3-transitions)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/**
+ * Menu overview.
+ */
+.c-menu {
+  position: fixed;
+  z-index: 200;
+  background-color: rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
+
+/**
+ * Close button resets.
+ */
+
+.c-menu__close {
+  color: #fff;
+  background-color: #0f0;
+  font-size: 14px;
+  border: none;
+  box-shadow: none;
+  border-radius: none;
+  /*visibility: hidden;*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+/**
+ * Body states.
+ *
+ * When a menu is active, we want to hide the overflows on the body to prevent
+ * awkward document scrolling.
+ */
+body.has-active-menu {
+  overflow: hidden;
+}
+
+/**
+ * Mask component
+ */
+
+.c-mask {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
+}
+
+.c-mask.is-active {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;     /* opacity of mask */
+  transition: opacity 0.3s;
+}
+
+.c-menu--slide-left{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; /* somehow I broke it !? */
+}
+
+@media all and (min-width: 170px) {
+  .c-menu--slide-left{
+    width: 170px;
+  }
+}
+
+.c-menu--slide-left .c-menu__item{
+  display: block;
+  width: 150px; /* still not exactly sure what this does? */
+  height: 50px;
+  line-height: 50px;
+}
+
+.c-menu--slide-left .c-menu__link{
+  display: block;
+  outline: none;
+  text-decoration: none;
+  padding: 0 20px;
+  box-shadow: inset 0 1px rgba(0,0,0,0.2);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1em;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.c-menu--slide-left .c-menu__link:hover,
+.c-menu--slide-left .c-menu__link:focus{
+  /*color: #1abc9c; */
+  color: #4BC0F2; /*nav menu items hover color */
+}
+
+/*.c-menu--slide-left .c-menu__close{
+  display: block;
+  padding: 12px 24px;
+  width: 100%;
+}*/
+
+
+@media all and (min-width: 180px) {
+  .c-menu--slide-left{
+    transform: translateX(-150%);
+  }
+}
+
+.c-menu--slide-left.is-active{
+  transform: translateX(0);
+}
+
+
+.c-menu__close {
+  position: fixed;
+  top: 5px;
+  left: 100px;
+  z-index: 100;
+  display: block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.c-menu__close span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 8%;
+  background-color: #005596; /* Rice blue */
+  font-size: 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+
+.c-menu--slide-left.is-active .c-menu__close span {
+  background-color: transparent;
+}
+
+.c-menu__close span:before,
+.c-menu__close span:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #505151; /* Rice gray */
+  content: '';
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.c-menu__close span:before {
+  -webkit-transform: translateY(-250%);
+  transform: translateY(-250%);
+}
+
+.c-menu__close span:after {
+  -webkit-transform: translateY(250%);
+  transform: translateY(250%);
+}
+
+.c-menu--slide-left.is-active .c-menu__close span:before {
+  -webkit-transform: translateY(0) rotate(45deg);
+  transform: translateY(0) rotate(45deg);
+  background: #fff;
+}
+
+.c-menu--slide-left.is-active .c-menu__close span:after {
+  -webkit-transform: translateY(0) rotate(-45deg);
+  transform: translateY(0) rotate(-45deg);
+  background: #fff;
+}
